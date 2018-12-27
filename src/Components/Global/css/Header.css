@@ -1,6 +1,6 @@
 .Header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color:#C62828;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,11 +24,11 @@
   padding-right: 20px;
 }
 .Menu li a{
-  color:#cccccc ;
+  color:#ffffff ;
   text-decoration: none;
 }
 .Menu li a:hover{
-  color:#ffffff;
+  color:rgba(250,250,250,0.5);
 }
 
 

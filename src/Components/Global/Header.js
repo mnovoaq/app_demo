@@ -17,7 +17,7 @@ class Header extends Component {
     return (
       <div className="Header">
         <header className="Logo">
-          
+
           <h2>{title}</h2>
           <ul className="Menu">
             {
