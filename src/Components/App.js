@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 //Assets
 import 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
+import './Global/css/App.css';
 
 //Components
 import Sidebar from './Global/Sidebar';
@@ -23,10 +24,9 @@ class App extends Component {
     const { children } = this.props;
     return (
       <div className="App">
-        <Header title="Mi App" items={items} />
-        <Sidebar />
+
+        <Sidebar items={items} />
         <Content body={children} />
-        <Footer copyright="&copy; Mi App 2018" />
       </div>
     );
   }

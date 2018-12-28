@@ -1,9 +1,15 @@
+//Dependecies
 import React, { Component } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
-import { BrowserRouter, Route } from "react-router-dom";
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
+//Assets
 import "materialize-css/dist/css/materialize.min.css";
 
+//Components
 class Sidebar extends Component {
+
     componentDidMount() {
         var elem = document.querySelector(".sidenav");
         var instance = M.Sidenav.init(elem, {
@@ -11,33 +17,22 @@ class Sidebar extends Component {
             inDuration: 250
         });
     }
+    static propTypes = {
+      title: PropTypes.string.isRequired,
+      items: PropTypes.array.isRequired
+    };
 
     render() {
+        const { title, items } = this.props;
         return (
             <div>
-                <ul id="slide-out" className="sidenav">
-                    <li />
-                    <li>
-                        <a href="#!">
-                            <i className="material-icons">cloud</i>First Link
-                            With Icon
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#!">Second Link</a>
-                    </li>
-                    <li>
-                        <div className="divider" />
-                    </li>
-                    <li>
-                        <a className="subheader">Subheader</a>
-                    </li>
-                    <li>
-                        <a className="waves-effect" href="#!">
-                            Third Link With Waves
-                        </a>
-                    </li>
+                <ul id="slide-out" className="sidenav ">
+                {
+                  items && items.map((item, key) => <li key={key}><Link to={item.url}>{item.title}</Link></li>
+                  )
+                }
                 </ul>
+
                 <a href="#" data-target="slide-out" className="sidenav-trigger">
                     <i className="material-icons">menu</i>
                 </a>

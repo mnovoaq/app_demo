@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-image:url(../images/back_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height:100vh;
 }
 
 .App-logo {
@@ -16,6 +21,19 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.App input{
+  background-color: #ffffff !important;
+  padding:3px !important;
+  text-align: center;
+  color:#777777 !important;
+  border-radius:3px !important;
+  margin:0 !important;
+}
+
+.input-field{
+  margin-top:5px !important;
+  margin-bottom:5px !important;
 }
 
 .App-link {
