@@ -24,7 +24,6 @@
 }
 .App input{
   background-color: #ffffff !important;
-  padding:3px !important;
   text-align: center;
   color:#777777 !important;
   border-radius:3px !important;
@@ -36,6 +35,32 @@
   margin-bottom:5px !important;
 }
 
+.btn-login{
+  width:100%;
+  height:auto;
+  margin-top:5px;
+  margin-bottom:3px;
+  border-radius:3px;
+  padding:4px;
+  color:#ffffff;
+  background-color:#272727;
+}
+.btn-link{
+  color:#ffffff;
+}
+.btn-fb{
+  width:100%;
+  height:auto;
+  margin-top:5px;
+  margin-bottom:3px;
+  border-radius:3px;
+  padding:4px;
+  color:#ffffff;
+  background-color:#3A559F;
+}
+.btn-login:focus{
+  background-color:#red;
+}
 .App-link {
   color: #61dafb;
 }

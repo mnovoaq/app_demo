@@ -1,5 +1,6 @@
 //Dependecies
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 class Formlogin extends Component{
@@ -16,6 +17,12 @@ class Formlogin extends Component{
           <div className="input-field col s12">
             <input placeholder="Contraseña" id="last_name" type="password" className="validate" />
           </div>
+
+          <div className="col s12">
+          <Link className="waves-effect  btn-flat btn-login" to="/About">Ingresar</Link>
+          <a className="waves-effect  btn-flat btn-fb">Entrar con Facebook</a>
+          </div>
+
         </div>
 
       </form>
