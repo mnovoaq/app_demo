@@ -9,9 +9,8 @@ import './Global/css/App.css';
 
 //Components
 import Sidebar from './Global/Sidebar';
-import Header from './Global/Header';
 import Content from './Global/Content';
-import Footer from './Global/Footer';
+
 
 //Data
 import items from '../data/menu';

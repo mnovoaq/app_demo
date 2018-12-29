@@ -4,11 +4,15 @@ export default[
     url: '/'
   },
   {
-    title: 'About Us',
-    url: '/about',
+    title: 'Cupones',
+    url: '/cupones',
   },
   {
-    title:'Contact us',
-    url: '/contact'
+    title:'Billetera',
+    url: '/billetera'
+  },
+  {
+    title:'Cuenta',
+    url: '/cuenta'
   }
 ];

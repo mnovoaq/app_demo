@@ -12,7 +12,7 @@ class Sidebar extends Component {
 
     componentDidMount() {
         var elem = document.querySelector(".sidenav");
-        var instance = M.Sidenav.init(elem, {
+        M.Sidenav.init(elem, {
             edge: "left",
             inDuration: 250
         });
@@ -23,7 +23,7 @@ class Sidebar extends Component {
     };
 
     render() {
-        const { title, items } = this.props;
+        const { items } = this.props;
         return (
             <div>
                 <ul id="slide-out" className="sidenav ">
@@ -33,9 +33,9 @@ class Sidebar extends Component {
                 }
                 </ul>
 
-                <a href="#" data-target="slide-out" className="sidenav-trigger">
+                <button  data-target="slide-out" className="sidenav-trigger">
                     <i className="material-icons">menu</i>
-                </a>
+                </button>
             </div>
         );
     }

@@ -19,8 +19,8 @@ class Formlogin extends Component{
           </div>
 
           <div className="col s12">
-          <Link className="waves-effect  btn-flat btn-login" to="/About">Ingresar</Link>
-          <a className="waves-effect  btn-flat btn-fb">Entrar con Facebook</a>
+          <Link className="waves-effect  btn-flat btn-login" to="/Cupones">Ingresar</Link>
+          <Link className="waves-effect  btn-flat btn-fb" to="/Cupones">Entrar con Facebook</Link>
           </div>
 
         </div>
