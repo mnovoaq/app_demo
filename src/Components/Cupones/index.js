@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 //Assets
 import "materialize-css/dist/css/materialize.min.css";
+import "../Global/css/special.css";
 
 document.addEventListener('DOMContentLoaded', function() {
    var elems = document.querySelectorAll('.carousel');
@@ -15,14 +16,13 @@ class Cupones extends Component{
   render(){
     return (
       <div className="Cupones">
-
-<div className="carousel">
-  <Link className="carousel-item" to="#one!"><img src="https://lorempixel.com/250/250/nature/1" alt="cupon" /></Link>
-  <Link className="carousel-item" to="#two!"><img src="https://lorempixel.com/250/250/nature/2" alt="cupon" /></Link>
-  <Link className="carousel-item" to="#three!"><img src="https://lorempixel.com/250/250/nature/3" alt="cupon" /></Link>
-  <Link className="carousel-item" to="#four!"><img src="https://lorempixel.com/250/250/nature/4" alt="cupon" /></Link>
-  <Link className="carousel-item" to="#five!"><img src="https://lorempixel.com/250/250/nature/5" alt="cupon" /></Link>
-</div>
+        <div className="carousel">
+          <Link className="carousel-item" to="#one!"><img src={require('../Global/images/p1.jpg')} alt="img" /></Link>
+          <Link className="carousel-item" to="#two!">  <img src={require('../Global/images/p2.jpg')} alt="img" /></Link>
+          <Link className="carousel-item" to="#three!"><img src={require('../Global/images/p3.jpg')} alt="img" /></Link>
+          <Link className="carousel-item" to="#four!"><img src={require('../Global/images/p4.jpg')} alt="img" /></Link>
+          <Link className="carousel-item" to="#five!"><img src={require('../Global/images/p5.jpg')} alt="img" /></Link>
+        </div>
       </div>
     );
   }
