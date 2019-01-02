@@ -12,6 +12,7 @@ import Sidebar from './Global/Sidebar';
 import Content from './Global/Content';
 
 
+
 //Data
 import items from '../data/menu';
 
@@ -26,6 +27,7 @@ class App extends Component {
 
         <Sidebar items={items} />
         <Content body={children} />
+
       </div>
     );
   }

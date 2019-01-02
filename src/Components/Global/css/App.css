@@ -1,9 +1,9 @@
 .App {
   text-align: center;
-  background-image:url(../images/back_1.jpg);
+  /*background-image:url(../images/back_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center center;*/
   height:100vh;
 }
 
@@ -58,12 +58,42 @@
   color:#ffffff;
   background-color:#3A559F;
 }
+.btn-side{
+  position:fixed;
+  left:10px;
+  top:10px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  z-index:111;
+}
+.btn-side::after{
+  background:none !important;
+}
+.btn-side i{
+  font-weight:800 !important;
+  font-size:40px !important;
+}
 .btn-login:focus{
   background-color:#red;
 }
 .App-link {
   color: #61dafb;
 }
+.Bottombar{
+  display: block;
+  position:fixed;
+  margin:0;
+  bottom:-5px;
+  left:0;
+}
+.Bottombar li{
+  width:14.2857%;
+  display: inline-block;
+  float:left;
+
+}
+
 
 @keyframes App-logo-spin {
   from {

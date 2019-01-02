@@ -1,7 +1,7 @@
 export default[
   {
     title: 'Home',
-    url: '/'
+    url: '/Board'
   },
   {
     title: 'Cupones',
@@ -14,5 +14,9 @@ export default[
   {
     title:'Cuenta',
     url: '/cuenta'
+  },
+  {
+    title:'Exit',
+    url: '/'
   }
 ];

@@ -33,7 +33,7 @@ class Sidebar extends Component {
                 }
                 </ul>
 
-                <button  data-target="slide-out" className="sidenav-trigger">
+                <button  data-target="slide-out" className="sidenav-trigger btn-side">
                     <i className="material-icons">menu</i>
                 </button>
             </div>
