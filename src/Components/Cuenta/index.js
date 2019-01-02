@@ -5,7 +5,7 @@ class Cuenta extends Component{
   render(){
     return (
       <div className="Cuenta">
-        <h1>Account Page</h1>
+        <span>Account Page</span>
       </div>
     );
   }

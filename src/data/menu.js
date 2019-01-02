@@ -16,7 +16,7 @@ export default[
     url: '/cuenta'
   },
   {
-    title:'Exit',
+    title:'Salir',
     url: '/'
   }
 ];

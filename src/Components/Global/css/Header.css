@@ -1,14 +1,21 @@
 .Header {
-  /*background-color:#C62828;*/
-  min-height: 50vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
+  top:-5px ;
 }
-
+.Header nav{
+    background-color:#E53935;
+}
+.Header img{
+  position: relative;
+  top:6px;
+}
 .Menu{
   margin:0;
   padding:0;

@@ -1,65 +1,129 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Countdown from 'react-countdown-now';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 
-class Example extends React.Component {
-  constructor() {
-    super();
-    this.state = { time: {}, seconds: 5 };
-    this.timer = 0;
-    this.startTimer = this.startTimer.bind(this);
-    this.countDown = this.countDown.bind(this);
-  }
+/**
+ * Note :
+ * If you're using react v 15.4 or less
+ * You can directly import PropTypes from react instead.
+ * Refer to this : https://reactjs.org/warnings/dont-call-proptypes.html
+ */
 
-  secondsToTime(secs){
-    let hours = Math.floor(secs / (60 * 60));
+class Countdown extends Component {
+  constructor(props) {
+    super(props);
 
-    let divisor_for_minutes = secs % (60 * 60);
-    let minutes = Math.floor(divisor_for_minutes / 60);
-
-    let divisor_for_seconds = divisor_for_minutes % 60;
-    let seconds = Math.ceil(divisor_for_seconds);
-
-    let obj = {
-      "h": hours,
-      "m": minutes,
-      "s": seconds
-    };
-    return obj;
+    this.state = {
+      days: 0,
+      hours: 0,
+      min: 0,
+      sec: 0,
+    }
   }
 
   componentDidMount() {
-    let timeLeftVar = this.secondsToTime(this.state.seconds);
-    this.setState({ time: timeLeftVar });
+    // update every second
+    this.interval = setInterval(() => {
+      const date = this.calculateCountdown(this.props.date);
+      date ? this.setState(date) : this.stop();
+    }, 1000);
   }
 
-  startTimer() {
-    if (this.timer == 0 && this.state.seconds > 0) {
-      this.timer = setInterval(this.countDown, 1000);
-    }
+  componentWillUnmount() {
+    this.stop();
   }
 
-  countDown() {
-    // Remove one second, set state so a re-render happens.
-    let seconds = this.state.seconds - 1;
-    this.setState({
-      time: this.secondsToTime(seconds),
-      seconds: seconds,
-    });
+  calculateCountdown(endDate) {
+    let diff = (Date.parse(new Date(endDate)) - Date.parse(new Date())) / 1000;
 
-    // Check if we're at zero.
-    if (seconds == 0) {
-      clearInterval(this.timer);
+    // clear countdown when date is reached
+    if (diff <= 0) return false;
+
+    const timeLeft = {
+      years: 0,
+      days: 0,
+      hours: 0,
+      min: 0,
+      sec: 0
+    };
+
+    // calculate time difference between now and expected date
+    if (diff >= (365.25 * 86400)) { // 365.25_ * 24_ * 60_ * 60_
+      timeLeft.years = Math.floor(diff / (365.25 * 86400));
+      diff -= timeLeft.years * 365.25 * 86400;
     }
+    if (diff >= 86400) { // 24 * 60 * 60
+      timeLeft.days = Math.floor(diff / 86400);
+      diff -= timeLeft.days * 86400;
+    }
+    if (diff >= 3600) { // 60 * 60
+      timeLeft.hours = Math.floor(diff / 3600);
+      diff -= timeLeft.hours * 3600;
+    }
+    if (diff >= 60) {
+      timeLeft.min = Math.floor(diff / 60);
+      diff -= timeLeft.min * 60;
+    }
+    timeLeft.sec = diff;
+
+    return timeLeft;
+  }
+
+  stop() {
+    clearInterval(this.interval);
+  }
+
+  addLeadingZeros(value) {
+    value = String(value);
+    while (value.length < 2) {
+      value = '0' + value;
+    }
+    return value;
   }
 
   render() {
-    return(
-      <div>
-        <button onClick={this.startTimer}>Start</button>
-        m: {this.state.time.m} s: {this.state.time.s}
+    const countDown = this.state;
+
+    return (
+      <div className="Countdown">
+        <span className="Countdown-col">
+          <span className="Countdown-col-element">
+              <strong>{this.addLeadingZeros(countDown.days)}</strong>
+              <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
+          </span>
+        </span>
+
+        <span className="Countdown-col">
+          <span className="Countdown-col-element">
+            <strong>{this.addLeadingZeros(countDown.hours)}</strong>
+            <span>Hours</span>
+          </span>
+        </span>
+
+
+        <span className="Countdown-col">
+          <span className="Countdown-col-element">
+            <strong>{this.addLeadingZeros(countDown.min)}</strong>
+            <span>Min</span>
+          </span>
+        </span>
+
+        <span className="Countdown-col">
+          <span className="Countdown-col-element">
+            <strong>{this.addLeadingZeros(countDown.sec)}</strong>
+            <span>Sec</span>
+          </span>
+        </span>
       </div>
     );
   }
 }
-export default Example;
+
+Countdown.propTypes = {
+  date: PropTypes.string.isRequired
+};
+
+Countdown.defaultProps = {
+  date: new Date()
+};
+
+export default Countdown;
