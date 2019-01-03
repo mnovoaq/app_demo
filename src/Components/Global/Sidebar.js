@@ -18,8 +18,7 @@ class Sidebar extends Component {
         });
     }
     static propTypes = {
-      title: PropTypes.string.isRequired,
-      items: PropTypes.array.isRequired
+          items: PropTypes.array.isRequired
     };
 
     render() {
@@ -27,6 +26,9 @@ class Sidebar extends Component {
         return (
             <div>
                 <ul id="slide-out" className="sidenav ">
+                  <div className="profile-head">
+                    <img  className="circle responsive-img" src={require('../Global/images/mitsh.jpg')} alt="img" width="60%"/>
+                  </div>
                 {
                   items && items.map((item, key) => <li key={key}><Link to={item.url}>{item.title}</Link></li>
                   )

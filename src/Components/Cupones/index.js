@@ -1,14 +1,13 @@
 //Dependecies
 import React, { Component } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
-import { Link } from 'react-router-dom';
-
 
 //Assets
 import "materialize-css/dist/css/materialize.min.css";
 import "../Global/css/App.css";
 
 //Components
+import Modal from '../Global/Modal';
 import Header from '../Global/Header';
 import Bottombar from '../Global/Bottombar';
 import Countdown from '../Global/Countdown';
@@ -25,10 +24,11 @@ import Slidecoupon from '../Global/Slidecoupon';
   class Cupones extends Component{
     render(){
       return (
-        <div ClassName="Cupones">
+        <div className="">
           <Header />
           <Slidecoupon  />
           <Countdown date={`${year}-12-24T00:00:00`} />
+          <Modal />
           <Bottombar />
         </div>
       );

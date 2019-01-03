@@ -12,7 +12,7 @@ class Slidecoupon extends Component {
         return (
 
             <div className="carousel">
-              <Link className="carousel-item" to="#one!"><img src={require('../Global/images/p1.jpg')} alt="img" /></Link>
+              <Link className="carousel-item" to="#one!" ><img src={require('../Global/images/p1.jpg')} alt="img" /></Link>
               <Link className="carousel-item" to="#two!"><img src={require('../Global/images/p2.jpg')} alt="img" /></Link>
               <Link className="carousel-item" to="#three!"><img src={require('../Global/images/p3.jpg')} alt="img" /></Link>
               <Link className="carousel-item" to="#four!"><img src={require('../Global/images/p4.jpg')} alt="img" /></Link>

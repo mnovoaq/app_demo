@@ -86,8 +86,13 @@ input{
 .App-link {
   color: #61dafb;
 }
+.profile-head{
+  width:100%;
+  background-color:#272727;
+  margin-bottom:35px;
+}
 .carousel{
-  height:270px;
+  height:240px;
   top:0;
 }
 .Bottombar{
@@ -102,15 +107,9 @@ input{
   display: inline-block;
   float:left;
 }
-.Completionist{
-  background-color: black !important;
-  color: white !important;
-  font-size: 40px !important;
-  padding: 5px 10px 5px 10px !important;
-}
 .Countdown{
-  margin: 10px auto;
-  padding-bottom: 20px;
+  margin: 15px auto;
+
 }
 
 .Countdown-col{
@@ -133,6 +132,12 @@ input{
 .Countdown-col-element strong{
   font-size: 24px;
   color:#ffffff;
+}
+.modal{
+  position: fixed !important;
+  bottom:0;
+  z-index:999;
+  width:100%;
 }
 
 @keyframes App-logo-spin {

@@ -1,6 +1,5 @@
 //Dependencies
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 //Assets
@@ -13,10 +12,10 @@ class Header extends Component {
     return (
       <div className="Header">
         <nav>
-          <div class="nav-wrapper">
-          
+          <div className="nav-wrapper">
+
           <Link to=""><img src={require('../Global/images/slidery_logo.svg')} alt="img" width="24%"/></Link>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <ul id="nav-mobile" className="left hide-on-med-and-down">
               <li><a href="sass.html">Sass</a></li>
               <li><a href="badges.html">Components</a></li>
               <li><a href="collapsible.html">JavaScript</a></li>
