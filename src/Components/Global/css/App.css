@@ -40,7 +40,9 @@
 input{
   width:90% !important;
 }
-
+hr{
+  border:0.5px solid #f0f0f0;
+}
 .btn-login{
   width:90%;
   height:auto;
@@ -92,6 +94,41 @@ input{
 .App-link {
   color: #61dafb;
 }
+/*Board*/
+.row-board{
+  margin:0 20px;
+  padding:30px;
+  color:#ffffff;
+}
+.row-board-2{
+  margin:0 20px;
+  padding:0;
+  color:#ffffff;
+}
+.row-board h4{
+  margin:0;
+}
+.row-board-2 i{
+  font-size:40px !important;
+}
+.row-board-2 a{
+  color:#ffffff;
+}
+.border-dott{
+  border:4px dotted #ffffff;
+}
+.border-nodott-top{
+  border-top:none;
+}
+.border-nodott-left{
+  border-left:none;
+}
+.border-nodott-right{
+  border-right:none;
+}
+.text-resp{
+  font-size:5vw;
+}
 .sidenav{
   max-width:75%;
 }
@@ -101,7 +138,7 @@ input{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  margin-bottom:100px;
+  margin-bottom:50px;
 }
 .profile-head img{
   max-width: 40%;

@@ -29,7 +29,9 @@ class Sidebar extends Component {
                   <div className="profile-head">
                     <img  className="responsive-img circle z-depth-1" src={require('../Global/images/mitsh.jpg')} alt="img"/>
 
+
                   </div>
+                  <p className="center">Mitchel Novoa</p><hr/>
                 {
                   items && items.map((item, key) => <li key={key}><Link to={item.url}>{item.title}</Link></li>
                   )
