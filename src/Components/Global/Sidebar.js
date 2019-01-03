@@ -27,7 +27,8 @@ class Sidebar extends Component {
             <div>
                 <ul id="slide-out" className="sidenav ">
                   <div className="profile-head">
-                    <img  className="circle responsive-img" src={require('../Global/images/mitsh.jpg')} alt="img" width="60%"/>
+                    <img  className="responsive-img circle z-depth-1" src={require('../Global/images/mitsh.jpg')} alt="img"/>
+
                   </div>
                 {
                   items && items.map((item, key) => <li key={key}><Link to={item.url}>{item.title}</Link></li>

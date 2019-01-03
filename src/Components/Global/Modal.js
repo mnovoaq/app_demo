@@ -31,17 +31,17 @@ class Modal extends React.Component {
     modal.push(
       <div className="modal " style={this.state.toggle ? display : hide}>
       <div className="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
+        <h4>Cupon Sorteo</h4>
+        <p>$300 Slids</p>
       </div>
       <div className="modal-footer">
-        <a className="btn" onClick={this.toggle}>Agree</a>
+        <a className="btn" onClick={this.toggle}>Comprar</a>
       </div>
     </div>
     );
     return (
       <div>
-        <a className="btn" onClick={this.toggle}>Modal</a>
+        <a className="btn" onClick={this.toggle}>ver cupón</a>
         {modal}
       </div>
     );

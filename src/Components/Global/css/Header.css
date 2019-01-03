@@ -14,7 +14,7 @@
 }
 .Header img{
   position: relative;
-  top:6px;
+  top:8px;
 }
 .Menu{
   margin:0;
@@ -28,6 +28,7 @@
 .Menu li a{
   color:#ffffff ;
   text-decoration: none;
+  font-size:22px !important;
 }
 .Menu li a:hover{
   color:rgba(250,250,250,0.5);

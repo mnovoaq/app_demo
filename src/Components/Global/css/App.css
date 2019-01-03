@@ -67,13 +67,19 @@ input{
 .btn-side{
   position:fixed;
   left:10px;
-  top:10px;
+  top:5px;
   background: none;
   border: none;
   color: #ffffff;
   z-index:111;
 }
 .btn-side::after{
+  background:none !important;
+}
+.btn-side:focus{
+  background:none !important;
+}
+.btn-side:active{
   background:none !important;
 }
 .btn-side i{
@@ -86,10 +92,23 @@ input{
 .App-link {
   color: #61dafb;
 }
+.sidenav{
+  max-width:75%;
+}
 .profile-head{
   width:100%;
-  background-color:#272727;
-  margin-bottom:35px;
+  background-image:url(../images/back_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom:100px;
+}
+.profile-head img{
+  max-width: 40%;
+  height: auto;
+  border: 4px solid white;
+  position: relative;
+  top: 50px;
 }
 .carousel{
   height:240px;

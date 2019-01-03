@@ -3,11 +3,14 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 class Formlogin extends Component{
+
   render(){
     return (
 
-    <div className="row">
+
+    <div className="row form-login">
       <form className="col s12">
         <div className="row">
           <div className="input-field col s12">

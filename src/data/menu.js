@@ -1,6 +1,6 @@
 export default[
   {
-    title: 'Home',
+    title: 'Resumen',
     url: '/Board'
   },
   {
