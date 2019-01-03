@@ -17,7 +17,7 @@ class Header extends Component {
           <div className="nav-wrapper">
           <Link to="" ><img src={require('../Global/images/slidery_logo.svg')} alt="img" width="24%"/></Link>
             <ul id="nav-mobile" className="right">
-              <li><a href="sass.html">7600 Slids</a></li>
+              <li><a href="#">Slids: 7600</a></li>
             </ul>
           </div>
         </nav>
