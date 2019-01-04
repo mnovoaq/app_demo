@@ -12,8 +12,9 @@ import Bottombar from '../Global/Bottombar';
 class Board extends Component{
   render() {
     return (
-      <div className="Board">
+      <div className="">
         <Header />
+      <div className="Board row-content">
         <img src={require('../Global/images/gift.png')} alt="img" width="60%"/>
         <div className="row row-board r-1 border-dott valign-wrapper">
           <div className="col s6 valign left">
@@ -21,7 +22,7 @@ class Board extends Component{
           tu saldo es</span>
           </div>
           <div className="col s6 valign">
-            <h4>6.700</h4>
+            <h4>7.600</h4>
             <span className="text-resp">Slids</span>
           </div>
         </div>
@@ -47,7 +48,7 @@ class Board extends Component{
           </div>
 
         </div>
-
+        </div>
         <Bottombar />
       </div>
     );

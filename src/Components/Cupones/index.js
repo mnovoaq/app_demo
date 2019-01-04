@@ -26,9 +26,11 @@ import Slidecoupon from '../Global/Slidecoupon';
       return (
         <div className="">
           <Header />
+          <div className="row-content">
           <Slidecoupon  />
           <Countdown date={`${year}-12-24T00:00:00`} />
           <Modal />
+          </div>
           <Bottombar />
         </div>
       );

@@ -28,18 +28,19 @@ class Modal extends React.Component {
     var modal = [];
     modal.push(
       <div className="modal " style={this.state.toggle ? display : hide}>
-      <div className="modal-content">
+      <div className="modal-conten ">
         <h4>Cupon Sorteo</h4>
         <p>$300 Slids</p>
+        <small className="text-resp">Lorem ipsum dolor sit amet, consectetur adipisicing</small>
       </div>
       <div className="modal-footer">
-        <a className="btn" onClick={this.toggle}>Comprar</a>
+        <a className="btn black" onClick={this.toggle}>Comprar</a>
       </div>
     </div>
     );
     return (
       <div>
-        <a className="btn" onClick={this.toggle}>ver cupón</a>
+        <a className="btn red darken-1" onClick={this.toggle}>ver cupón</a>
         {modal}
       </div>
     );

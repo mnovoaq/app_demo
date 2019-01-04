@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import App from './Components/App';
 import Board from './Components/Board';
 import Cupones from './Components/Cupones';
+import Categoria from './Components/Categoria';
 import Billetera from './Components/Billetera';
 import Cuenta from './Components/Cuenta';
 import Home from './Components/Home';
@@ -16,6 +17,7 @@ const AppRoutes = () =>
     <Switch>
       <Route exact path="/board" component={Board} />
       <Route exact path="/cupones" component={Cupones} />
+      <Route exact path="/categoria" component={Categoria} />
       <Route exact path="/billetera" component={Billetera} />
       <Route exact path="/cuenta" component={Cuenta} />
       <Route exact path="/" component={Home} />

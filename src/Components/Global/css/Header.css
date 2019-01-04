@@ -6,7 +6,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  position: relative;
+  position: fixed;
+  z-index: 99;
   top:-5px ;
 }
 .Header nav{
