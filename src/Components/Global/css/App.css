@@ -97,7 +97,7 @@ hr{
 .row-content{
   position: relative;
   overflow:scroll;
-  top:12vh;
+
 }
 /*Board*/
 .row-board{
@@ -159,11 +159,22 @@ hr{
   height:240px;
   top:0;
 }
+.Countdown strong{
+  font-weight:700 !important;
+  font-size:30px !important;
+}
+.coupon-title{
+  color:#ffffff;
+  font-size:22px;
+  line-height:0;
+  position: relative;
+  top:10px;
+}
 .Bottombar{
   display: block;
   position:fixed;
   margin:0;
-  bottom:-5px;
+  bottom:-7px;
   left:0;
 }
 .Bottombar li{

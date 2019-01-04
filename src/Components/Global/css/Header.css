@@ -1,17 +1,18 @@
 .Header {
-  min-height: 10vh;
+  min-height:65px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  position: fixed;
+  position: relative;
   z-index: 99;
   top:-5px ;
 }
 .Header nav{
     background-color:#E53935;
+    position: fixed;
 }
 .Header img{
   position: relative;
