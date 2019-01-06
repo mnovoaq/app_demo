@@ -27,7 +27,6 @@ import Slidecoupon from '../Global/Slidecoupon';
         <div className="">
           <Header />
           <div className="row-content">
-          <span className="coupon-title text-resp"><strong>Cupones</strong> vigentes</span>
           <Slidecoupon  />
           <Countdown date={`${year}-12-24T00:00:00`} />
           <Modal />

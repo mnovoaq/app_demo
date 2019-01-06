@@ -1,5 +1,5 @@
 .Header {
-  min-height:65px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,8 +11,10 @@
   top:-5px ;
 }
 .Header nav{
-    background-color:#E53935;
+    background-color:#000000;
     position: fixed;
+    min-height:50px;
+    top:0;
 }
 .Header img{
   position: relative;

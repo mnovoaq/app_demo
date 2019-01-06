@@ -1,9 +1,11 @@
-.App {
+body {
   text-align: center;
-background-image:url(../images/back_1.jpg);
-  background-repeat:repeat-x !important;
+  background-image:url(../images/back_1.jpg);
+  background-repeat:no-repeat ;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center center;
+  -webkit-background-size:cover;
   height:100vh;
 }
 
@@ -26,9 +28,13 @@ background-image:url(../images/back_1.jpg);
   background-color: #ffffff !important;
   text-align: center;
   color:#777777 !important;
-  border-radius:3px !important;
+  border:2px solid #B71C1C !important;
   margin:0 !important;
 }
+.App input:focus{
+  border:2px solid #EF5350 !important;
+}
+
 
 .Content{
   width:100% !important;
@@ -94,10 +100,15 @@ hr{
 .App-link {
   color: #61dafb;
 }
+.Board{
+  background-color:rgba(0,0,0,0.3);
+  padding-bottom:15px;
+}
 .row-content{
   position: relative;
   overflow:scroll;
-
+  top:57px;
+  height:83vh;
 }
 /*Board*/
 .row-board{
@@ -156,8 +167,12 @@ hr{
   top: 50px;
 }
 .carousel{
-  height:240px;
+  background-color:rgba(0,0,0,0.3);
+  height:270px;
   top:0;
+}
+.carousel-item{
+  top:20px;
 }
 .Countdown strong{
   font-weight:700 !important;

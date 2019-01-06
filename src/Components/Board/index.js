@@ -15,7 +15,10 @@ class Board extends Component{
       <div className="">
         <Header />
       <div className="Board row-content">
-        <img src={require('../Global/images/gift.png')} alt="img" width="60%"/>
+        <img src={require('../Global/images/gift.png')} alt="img" width="40%"/>
+        <div className="input-field col s12" align="center">
+          <input placeholder="Buscar cupón" type="search"  />
+        </div>
         <div className="row row-board r-1 border-dott valign-wrapper">
           <div className="col s6 valign left">
           <span className="text-resp" align="left">Actualmente

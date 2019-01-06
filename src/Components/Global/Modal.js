@@ -40,7 +40,7 @@ class Modal extends React.Component {
     );
     return (
       <div>
-        <a className="btn red darken-1" onClick={this.toggle}>ver cupón</a>
+        <div className="btn red darken-1" onClick={this.toggle}>ver cupón</div>
         {modal}
       </div>
     );

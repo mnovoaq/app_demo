@@ -1,7 +1,7 @@
 //Dependencies
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import M from "materialize-css/dist/js/materialize.min.js";
+
 
 //Assets
 import "materialize-css/dist/css/materialize.min.css";
@@ -17,7 +17,7 @@ class Header extends Component {
           <div className="nav-wrapper">
           <Link to="" ><img src={require('../Global/images/slidery_logo.svg')} alt="img" width="24%"/></Link>
             <ul id="nav-mobile" className="right">
-              <li><a href="#">Slids: 7600</a></li>
+              <li><Link to="">Slids: 7600</Link></li>
             </ul>
           </div>
         </nav>
