@@ -8,7 +8,100 @@ body {
   -webkit-background-size:cover;
   height:100vh;
 }
-
+/*padding*/
+.pad-0{
+  padding:0 !important;
+}
+.pad-5{
+  padding:5px !important;
+}
+.pad-10{
+  padding:10px !important;
+}
+.pad-15{
+  padding:15px !important;
+}
+.pad-20{
+  padding:20px !important;
+}
+.pad-40{
+  padding:40px !important;
+}
+/*margin*/
+.mar-0{
+  margin:0 !important;
+}
+.mar-5{
+  margin:5px !important;
+}
+.mar-10{
+  margin:10px !important;
+}
+.mar-15{
+  margin:15px !important;
+}
+.mar-20{
+  margin:20px !important;
+}
+.mar-40{
+  margin:40px !important;
+}
+/*margin vertical*/
+.marv-5{
+  margin:5px 0 !important;
+}
+.marv-10{
+  margin:10px 0 !important;
+}
+.marv-15{
+  margin:15px 0 !important;
+}
+.marv-20{
+  margin:20px 0 !important;
+}
+.marv-40{
+  margin:40px 0 !important;
+}
+/*Texto*/
+.fweight-100{
+  font-weight:100 !important;
+}
+.fweight-200{
+  font-weight:200 !important;
+}
+.fweight-300{
+  font-weight:300 !important;
+}
+.fweight-400{
+  font-weight:400 !important;
+}
+.fweight-500{
+  font-weight:500 !important;
+}
+.fweight-600{
+  font-weight:600 !important;
+}
+.fweight-700{
+  font-weight:700 !important;
+}
+.fweight-800{
+  font-weight:800 !important;
+}
+.fweight-900{
+  font-weight:900 !important;
+}
+.lheight-0{
+  line-height:0 !important;
+}
+.lheight-05{
+  line-height:0.5 !important;
+}
+.lheight-1{
+  line-height:1 !important;
+}
+.tcenter{
+  text-align:center !important;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -72,15 +165,7 @@ hr{
   color:#ffffff;
   background-color:#3A559F;
 }
-.btn-side{
-  position:fixed;
-  left:10px;
-  top:5px;
-  background: none;
-  border: none;
-  color: #ffffff;
-  z-index:111;
-}
+
 .btn-side::after{
   background:none !important;
 }
@@ -101,19 +186,19 @@ hr{
   color: #61dafb;
 }
 .Board{
-  background-color:rgba(0,0,0,0.3);
+  background-color:rgba(0,0,0,0.15);
   padding-bottom:15px;
 }
 .row-content{
   position: relative;
   overflow:scroll;
   top:57px;
-  height:83vh;
+  height:89vh;
 }
 /*Board*/
 .row-board{
   margin:0 20px;
-  padding:30px;
+  padding:15px;
   color:#ffffff;
 }
 .row-board-2{
@@ -131,8 +216,11 @@ hr{
 .row-board-2 a{
   color:#ffffff;
 }
+.row-board-2 span{
+  line-height: 0;
+}
 .border-dott{
-  border:4px dotted #ffffff;
+  border:3px dotted rgba(250,250,250,0.18);
 }
 .border-nodott-top{
   border-top:none;
@@ -145,7 +233,6 @@ hr{
 }
 .text-resp{
   font-size:5vw;
-
 }
 
 .sidenav{

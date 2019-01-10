@@ -31,16 +31,14 @@ class Sidebar extends Component {
 
 
                   </div>
-                  
+
                   <p className="center">Mitchel Novoa</p><hr/>
                 {
                   items && items.map((item, key) => <li key={key}><Link to={item.url}>{item.title}</Link></li>
                   )
                 }
                 </ul>
-                <button  data-target="slide-out" className="sidenav-trigger btn-side">
-                    <i className="material-icons">menu</i>
-                </button>
+              
             </div>
         );
     }
