@@ -23,7 +23,7 @@ class App extends Component {
   render() {
     const { children } = this.props;
     return (
-      <div className="App Secondbg">
+      <div className="App">
 
         <Sidebar items={items} />
         <Content body={children} />
